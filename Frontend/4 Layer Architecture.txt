@@ -1,0 +1,27 @@
+4 Layer Architecture
+
+1. UI
+=> components
+=> pages
+Note : 
+    -> handle the UI that we show on display
+
+
+2. Hooks
+=> Hooks
+    => useAuth.js 
+Note :
+    -> For managing state and api layers
+
+3. States  
+=> authContext.jsx
+=> aiContexts.jsx
+Note : 
+    -> For commuication with backend
+    -> Handle the data to store in database (that data we sent into database from frontend)
+
+
+4. API
+=> services
+    => authApi.jsx
+Note : Handle the backend api (we connect the backend APIs(routes) with frontend)

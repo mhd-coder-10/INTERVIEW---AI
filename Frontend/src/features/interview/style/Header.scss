@@ -1,0 +1,103 @@
+
+$bg-dark: #0d1117;
+$border-color: #30363d;
+$accent-pink: #e91e63;
+$text-primary: #ffffff;
+$text-secondary: #8b949e;
+
+.main-header {
+    width: 100%;
+    background-color: rgba($bg-dark, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid $border-color;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-group {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        cursor: pointer;
+
+        .logo-icon {
+            background: $accent-pink;
+            color: white;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            box-shadow: 0 0 15px rgba($accent-pink, 0.3);
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $text-primary;
+            letter-spacing: -0.02em;
+
+            .highlight {
+                color: $accent-pink;
+            }
+        }
+    }
+
+    .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        .auth-btn {
+            background: transparent;
+            border: none;
+            color: $text-secondary;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.2s;
+
+            &:hover {
+                color: $text-primary;
+            }
+
+            &.logout {
+                color: rgba($text-primary, 0.6);
+
+                &:hover {
+                    color: #ff4d4d;
+                }
+            }
+        }
+
+        .cta-btn {
+            background-color: transparent;
+            color: $text-primary;
+            border: 1px solid $accent-pink;
+            padding: 0.6rem 1.2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover {
+                background-color: $accent-pink;
+                box-shadow: 0 0 20px rgba($accent-pink, 0.4);
+            }
+        }
+    }
+}

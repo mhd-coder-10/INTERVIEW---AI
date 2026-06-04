@@ -1,0 +1,32 @@
+.button {
+        border :none;
+        outline: none;
+        padding-inline: 1.25rem;
+        padding-block: 0.75rem;
+        border-radius: 1rem;
+        font-weight: 600;
+        font-family: alice;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .primary-button {
+        background-color: rgb(152, 152, 225);
+        color: white;
+        margin-top: 0.7rem;
+        // width: fit-content;
+    }
+
+    .primary-button:active{
+        transform: scale(0.9);
+    }
+
+    .primary-button:hover {
+        background-color: rgb(152, 152, 225, 0.8);
+    }
+
+.highlight {
+    color: rgb(152, 152, 225);
+}
