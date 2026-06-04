@@ -6,11 +6,13 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin :    "http://localhost:5173" || 
-                "http://localhost:5174" || 
-                "https://interview-ai-7ocd.onrender.com"
-
-,
+    origin:[
+            "http://localhost:5173",
+            "http://localhost:5174",
+            "https://interview-ai-7ocd.onrender.com",
+            "https://interview-ai-1-agrq.onrender.com"
+        ]
+    ,
     credentials : true
 }));
 
