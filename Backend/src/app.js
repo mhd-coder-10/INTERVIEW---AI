@@ -6,7 +6,11 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin : "http://localhost:5173" || "http://localhost:5174",
+    origin :    "http://localhost:5173" || 
+                "http://localhost:5174" || 
+                "https://interview-ai-7ocd.onrender.com"
+
+,
     credentials : true
 }));
 
@@ -18,5 +22,9 @@ const interviewRouter = require("./routes/interviewRoutes");
 // Using all routes here
 app.use("/api/auth/", authRouter);
 app.use("/api/interview/", interviewRouter);
+
+app.get("/", (req, res) => {
+    res.send("Backend Running");
+});
 
 module.exports = app;
