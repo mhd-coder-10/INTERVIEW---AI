@@ -40,7 +40,6 @@ const Home = () => {
             );
             setLoading(false);
         }
-        
     }
 
     if(loading){

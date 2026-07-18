@@ -76,7 +76,7 @@ export const getAllInterviewReports = async () => {
 }
 
 /**
- * @description Geerate/ download Resume PDF based user's resume, JD, SD
+ * @description Generate/ download Resume PDF based user's resume, JD, SD
  */
 export const generateResumePdf = async({interviewReportID})=>{
     const response = await interview_Api.post(
